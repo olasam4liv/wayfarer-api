@@ -4,14 +4,22 @@
   "description": "WayFarer API ",
   "main": "app.js",
   "dependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.0.0",
     "mocha": "^6.1.4"
   },
   "scripts": {
-    "test": "mocha"
+    "start": "node app.js",
+    "test": "mocha",
+    "build": "babel app.js --out-dir build"
   },
   "repository": {
     "type": "git",
